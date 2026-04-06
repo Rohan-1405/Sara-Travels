@@ -257,19 +257,19 @@
   <br><br>
   <div class="card-container">
 
-    <div class="card">
+    <div class="card" onclick="goToForm('Travel Services')">
       <div class="icon">✈️</div>
-      <h3>Travel Services</h3>
+      <h3> Travel Services</h3>
       <p>We provide reliable affordable travel services,including bookings, reservations, and complete travel planning.</p>
       
          <ui class="tick-list">
         <li>Hotel Reservations</li>
-        <li>Heritage railway tours</li>
+        <li>Customized tour packages</li>
         <li>Airport assistance</li>
         </ui>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="goToForm('Hotel Reservation')">
       <div class="icon">🏨</div>
       <h3>Hotel Reservation</h3>
       <p>Book the perfect hotel for your stay, from budget options to luxury accomodations</p>
@@ -280,7 +280,7 @@
         </ui>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="goToForm('Transportation')">
       <div class="icon">🚗</div>
       <h3>Transportation</h3>
       <p>Affordable and convenient transportation services available.</p>
@@ -291,7 +291,7 @@
         </ui>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="goToForm('Adventure Activities')">
      <div class="icon">🔺</div>
       <h3>Adventure Activities</h3>
       <p>Experience thrilling adventure activities designed to add excitement and unforgettable moments to your journey.</p>
@@ -302,7 +302,7 @@
         </ui>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="goToForm('Travelling Guide')">
     <div class="icon">🌍</div>
       <h3>Travelling Guide</h3>
       <p>Explore like a local and leave only footprints.</p>    
@@ -313,7 +313,7 @@
         </ui>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="goToForm('24/7 Travel Support')">
       <div class="icon">📞</div>
       <h3>24/7 Travel Support</h3>
       <p>Round-the-clock support for all your travel needs.</p>
@@ -389,6 +389,11 @@
   <p>© 2026 saratravels, All rights reserved |</p>
   <p>Made with ❤️ for travelers worldwide</p>
 </div>
+<script>
+function goToForm(service) {
+  window.location.href = "form.html?service=" + encodeURIComponent(service);
+}
+</script>
 
 </footer>
 
